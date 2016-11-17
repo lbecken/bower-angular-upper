@@ -7,6 +7,10 @@
         .module('angularUpper')
         .filter('upper', upperFilter);
 
+    /**
+     * Transform string to uppercase
+     * @returns {Function}
+     */
     function upperFilter() {
         return function(input) {
             return input.uppercase();
